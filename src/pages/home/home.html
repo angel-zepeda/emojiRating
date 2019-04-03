@@ -6,9 +6,27 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+<ion-content padding style="background: #eee;">
+  <form > 
+    <ion-card>
+        <ionic3-star-rating
+          activeIcon = "happy"
+          defaultIcon = "happy-outline"
+          activeColor = "orange"
+          defaultColor = "blue"
+          readonly="false"
+          [rating]="3">
+        </ionic3-star-rating>
+    </ion-card>
+    <ion-card>
+      <ionic3-star-rating
+        activeIcon = "happy"
+        defaultIcon = "happy-outline"
+        activeColor = "orange"
+        defaultColor = "blue"
+        readonly="false"
+        [rating]="3">
+      </ionic3-star-rating>
+    </ion-card>
+  </form>
 </ion-content>
